@@ -10,6 +10,14 @@ Fill polygons in OpenLayers using random point features
   - `fillWithRandomPoints`: Main method to generate and render random points within polygons.
  
  Usage:
+0. Create a PMTiles file from your polygons with [Tippecanoe](https://github.com/felt/tippecanoe) using low detail for low zoom levels and `-ac` to coalesce tiny features. Example:
+
+`tippecanoe output.pmtiles input.geojson -Z9 -z14 -D7 -d10 -M50000 -ac`
+
+PMTiles coalesced polygons at low zoom (grey) vs original forest cover polygons (green)
+
+![coalesced_zoom_1](https://github.com/mir123/OLRandomPointsFill/assets/907400/0552ca76-76eb-410d-803e-3026612587d9)
+
  1. Import the class:
 
     import { RandomPointsFill } from "./RandomPointsFill.js";
