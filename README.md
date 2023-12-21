@@ -3,8 +3,10 @@
 Fill polygons in OpenLayers using random point features
 
  A utility class for OpenLayers to generate and display semi-random points within polygonal features.
- This class is designed to work with OpenLayers maps and provides functionality to fill polygon features
- with points (can be a symbol) which are arranged on a grid and with a random shift.
+ This class is designed to work with OpenLayers maps and provides functionality to fill polygon features with points (can be a symbol) which are arranged on a grid and with a random shift. Here I'm using it to display forest cover, consisting of multiple polygons.
+
+ ![image](https://github.com/mir123/OLRandomPointsFill/assets/907400/70d81a29-be44-4a1f-a6bf-d6a0ce5ac975)
+
  
  Method:
   - `fillWithRandomPoints`: Main method to generate and render random points within polygons.
